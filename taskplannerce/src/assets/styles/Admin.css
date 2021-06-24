@@ -1,0 +1,16 @@
+.admin_name {
+    display: flex;
+    
+}
+
+.admin_name .sign {
+    margin-top: 1em;
+    right: 55%;
+    position: absolute;
+}
+
+.separator {
+    width: 40%;
+    text-align: left;
+    margin-left: 0;
+}

@@ -1,0 +1,16 @@
+.side-bar-admin {
+  background: #EEECEC;
+  min-height: 90vh;
+  grid-area: sidebar;
+}
+
+.side-bar-admin .navbar-item {
+  display: block;
+  color: #015913;
+  text-decoration: none;
+  padding: 12px;
+}
+
+.side-bar-admin .navbar-item:hover {
+  background: white;
+}

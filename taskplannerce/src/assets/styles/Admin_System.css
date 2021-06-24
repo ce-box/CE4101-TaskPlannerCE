@@ -1,0 +1,9 @@
+.Admin_System ul li {
+  margin: 5px 10px;
+  list-style-type: none;
+  background-color: #f2f2f2;
+  float: left;
+  width: 199px;
+  text-align: center;
+  border-left: 1px solid #f2f2f2;
+}

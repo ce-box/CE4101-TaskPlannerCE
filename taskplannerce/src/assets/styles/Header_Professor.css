@@ -1,0 +1,111 @@
+.header_professor {
+  background-color: #015913;
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 5% 5% 5%;
+  grid-template-areas: "title help notificacion profile";
+}
+
+.header_professor .image {
+  background-image: url("../images/title.png");
+  background-repeat: no-repeat;
+  height: 60px;
+  grid-area: title;
+}
+
+.header_professor .help_professor {
+  cursor: pointer;
+  background-image: url("../images/info.png");
+  background-repeat: no-repeat;
+  grid-area: help;
+  margin-top: 10%;
+  background-size: 75% 85%;
+}
+
+.header_professor .profile_professor {
+  cursor: pointer;
+  background-image: url("https://avatars.githubusercontent.com/u/47313528?v=4");
+  grid-area: profile;
+  margin-top: 10%;
+  background-size: 75% 85%;
+  background-repeat: no-repeat;
+}
+
+.header_professor .notification_professor {
+  grid-area: notificacion;
+  cursor: pointer;
+  background-image: url("../images/bell.png");
+  background-repeat: no-repeat;
+  margin-top: 10%;
+  background-size: 75% 85%;
+}
+.header_professor .help_popup p {
+  margin: 5px;
+}
+.header_professor .help_popup {
+  visibility: hidden;
+  width: 160px;
+  height: 160px;
+  background-color: #015913;
+  color: #fff;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  left: 84%;
+}
+
+.header_professor .notification_popup {
+  visibility: hidden;
+  width: 160px;
+  height: 160px;
+  background-color: #015913;
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px 0;
+  padding-left: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  left: 84%;
+}
+
+.header_professor .profile_popup {
+  visibility: hidden;
+  width: 160px;
+  height: 160px;
+  background-color: #015913;
+  color: #fff;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  left: 84%;
+}
+
+.header_professor .show {
+  visibility: visible;
+}
+
+.header_professor .help_popup .help_img{
+  background-image: url("../images/help.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
+
+.header_professor .profile_popup .separator {
+  width: 90%;
+  text-align: left;
+  margin-left: 5%;
+}
+
+.header_professor .profile_popup .navbar-item {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header_professor .profile_popup .sign_out_a {
+  text-decoration: none;
+  color: #fff;
+}

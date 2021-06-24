@@ -1,0 +1,47 @@
+.Container_Profesor_Sign {
+  background-image: url("../images/background.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+
+.Container_Profesor_Sign .form-container h1 {
+  color: #fff;
+  font-size: 50px;
+}
+
+.Container_Profesor_Sign .form-container {
+  margin-top: 8%;
+  margin-left: 33%;
+  width: 32%;
+}
+
+.Container_Profesor_Sign .image {
+  background-image: url("../images/title.png");
+    background-repeat: no-repeat;
+    height: 60px;
+    grid-area: title;
+}
+
+.Container_Profesor_Sign .form-container input[type="text"] {
+  width: 100%;
+  height: 30px;
+}
+
+.Container_Profesor_Sign .form-container .carrera, .Container_Profesor_Sign .form-container .canton {
+  padding: 1px 2px;
+  width: 100%;
+  height: 30px;
+}
+
+.Container_Profesor_Sign .form-container .btn {
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  font-size: 16px;
+  width: 100px;
+  height: 30px;
+  background-color: #000;
+  cursor: pointer;
+  margin-left: 80%;
+}

@@ -1,0 +1,21 @@
+.professor_graf {
+  width: 100%;
+  margin: 0;
+}
+
+.professor_graf .professor_shared_board {
+  width: 50%;
+  margin: 0;
+  float: left;
+}
+
+.professor_graf .professor_time_line {
+  width: 50%;
+  margin: 0;
+  float: left;
+}
+
+.professor_graf .professor_dash_board {
+  width: 100%;
+  margin: 0;
+}
