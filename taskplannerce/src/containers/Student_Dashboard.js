@@ -23,8 +23,8 @@ class Student_Dashboard extends React.Component {
   ];
   render() {
     return (
-      <div className="dashboard_student">
-        <section>
+      <main className="dashboard_student">
+        <section className="boards">
           <h1> Dashboard </h1>
           Recently shared boards
           <div className="student_dash_board">
@@ -46,13 +46,14 @@ class Student_Dashboard extends React.Component {
                   }] 
                 }}
                 height={300}
-                width={600}
+                width={300}
                 options={{
 
                     parsing: {
                         xAxisKey: 'month',
                         yAxisKey: 'boards'
                     },
+                    responsive: true,
                     maintainAspectRatio: false,
                     scales: {
                     x: {
@@ -63,7 +64,7 @@ class Student_Dashboard extends React.Component {
               />
             </div>
           </div>
-          <div>
+          <div className="board-type">
             <h2>Percentage of academic boards</h2>
             <div>
                 <Doughnut
@@ -87,12 +88,13 @@ class Student_Dashboard extends React.Component {
                 width={300}
                 options={{
                     maintainAspectRatio: false,
+                    responsive: true,
                 }}
                 />
             </div>
           </div>
         </section>
-      </div>
+      </main>
     );
   }
 }

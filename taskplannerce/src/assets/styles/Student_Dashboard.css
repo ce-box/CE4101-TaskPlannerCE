@@ -1,0 +1,48 @@
+main {
+    display: inline-block;
+    margin: 2%;
+    width: 98%;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 1%;
+    margin-bottom: 3%;
+}
+
+.boards {
+    margin-top: 0;
+    margin: 2%;
+}
+
+.student_graf {
+    display: flex;
+    margin: 2%;
+}
+
+.student_time_line {
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    background-color: #ebf3e3;
+    margin: 1%;
+    margin-left: 0;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+.board-type {
+    width: 50%;
+    margin: 1%;
+    justify-content: center;
+    text-align: center;
+    background-color: #ebf3e3;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 0;
+}
