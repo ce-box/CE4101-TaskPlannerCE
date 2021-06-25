@@ -15,14 +15,20 @@ class Student_Dashboard extends React.Component {
     { month: "May", boards: 3 },
     { month: "Jun", boards: 5 },
   ];
+  list_boards_dash = [
+    { name: "Help" },
+    { name: "Datos" },
+    { name: "Lenguaje" },
+    { name: "Mate" },
+  ];
   render() {
     return (
       <div className="dashboard_student">
         <section>
           <h1> Dashboard </h1>
           Recently shared boards
-          <div className="professor_dash_board">
-            {this.list_boards.map((object) => (
+          <div className="student_dash_board">
+            {this.list_boards_dash.map((object) => (
               <Student_Board_Item key={object.name} {...object} />
             ))}
           </div>
