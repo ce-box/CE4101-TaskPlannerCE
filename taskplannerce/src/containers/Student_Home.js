@@ -4,6 +4,7 @@ import '../assets/styles/Student_Home.css';
 // Components
 import Header from "../components/Header";
 import SideBar from "../components/SideBar";
+import Student_Dashboard from './Student_Dashboard';
 
 // React
 import React from "react";
@@ -22,6 +23,7 @@ class Student_Home extends React.Component {
                         <Route path="/Student/Board">
                         </Route>
                         <Route path="/Student/Dashboard">
+                            <Student_Dashboard/>
                         </Route>
                         <Route path="/Student/Profile">
                         </Route>
