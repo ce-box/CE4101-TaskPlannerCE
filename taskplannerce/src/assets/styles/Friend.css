@@ -1,0 +1,28 @@
+h2{
+    margin: 0px;
+}
+
+h3 {
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+div.friend_main {
+    margin: 15px;
+    background: #ffff;
+    border-radius: 10px;
+    display: flex;
+}
+
+section.img_main{
+    width: 20%;
+}
+
+section.info_main{
+    width: 80%;
+}
+
+div.info {
+    display: flex;
+}
+
