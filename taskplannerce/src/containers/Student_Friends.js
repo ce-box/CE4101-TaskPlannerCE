@@ -44,7 +44,7 @@ class Student_Friends extends React.Component {
               <span class="search-icon"></span>
               <input type="text" placeholder="Search"></input>
             </div>
-            <a className="new-request">New Reqst</a>
+            <a className="new-request">New Request</a>
           </div>
           <div className="admin_table">
             <ul>
