@@ -9,15 +9,18 @@ import { BrowserRouter as Router, NavLink } from "react-router-dom";
 
 function open_board(name) {
   Student_Home.data = name;
-  
+
   console.log(Student_Home.data);
 }
 
 function Student_Board_Item({ name }) {
   return (
-    <div className="student_board_item" onClick={() => open_board(name)}>
+    <div className="student_board_item">
       <NavLink className="navbar-item" to="/Student/Board">
-        {name}
+        <div className="board_item" onClick={() => open_board(name)}>
+          <div className="board_img"></div>
+          {name}
+        </div>
       </NavLink>
     </div>
   );

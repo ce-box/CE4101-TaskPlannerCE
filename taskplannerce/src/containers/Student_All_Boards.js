@@ -1,5 +1,5 @@
 // Styles
-import "../assets/styles/Student_All_Boards.css"
+import "../assets/styles/Student_All_Boards.css";
 
 // Component
 import Student_Board_Item from "../components/Student_Boart_Item";
@@ -19,13 +19,16 @@ class Student_All_Boards extends React.Component {
   list_use = ["Academic", "Social", "Personal"];
 
   new_board() {
-    document.getElementsByClassName("board-new-popup")[0].style.display = "block";
+    document.getElementsByClassName("board-new-popup")[0].style.display =
+      "block";
   }
   create() {
-    document.getElementsByClassName("board-new-popup")[0].style.display = "none";
+    document.getElementsByClassName("board-new-popup")[0].style.display =
+      "none";
   }
   closeForm() {
-    document.getElementsByClassName("board-new-popup")[0].style.display = "none";
+    document.getElementsByClassName("board-new-popup")[0].style.display =
+      "none";
   }
 
   render() {
@@ -33,51 +36,64 @@ class Student_All_Boards extends React.Component {
       <div className="student_all_boards_container">
         <div className="board-new-popup">
           <form className="form-container">
-          <h1>New Board</h1>
-          <label for="name">Board Name </label>
-          <br/>
-          <input type="text" placeholder="Board Name" name="name" required />
-          <br/>
-          <label for="description">Description </label>
-          <br/>
-          <input type="text" placeholder="Description" name="description" required />
-          <br/>
-          <br/>
-          <label for="name">Board Type </label>
-          <br/>
-          <span>Select the category that the purpose of the board fits into</span>
-          <br/>
-          <select className="canton_student">
-                {this.list_use.map((object) => (
-                  <option value="{object}">{object}</option>
-                ))}
-              </select>
-          <br/>
-          <button type="button" className="btn" onClick={()=> this.create()}>
-            Create Board
-          </button>
-          <button type="button" className="btn close" onClick={()=> this.closeForm()}>
-            Close
-          </button>
+            <h1>New Board</h1>
+            <label for="name">Board Name </label>
+            <br />
+            <input type="text" placeholder="Board Name" name="name" required />
+            <br />
+            <label for="description">Description </label>
+            <br />
+            <input
+              type="text"
+              placeholder="Description"
+              name="description"
+              required
+            />
+            <br />
+            <br />
+            <label for="name">Board Type </label>
+            <br />
+            <span>
+              Select the category that the purpose of the board fits into
+            </span>
+            <br />
+            <select className="canton_student">
+              {this.list_use.map((object) => (
+                <option value="{object}">{object}</option>
+              ))}
+            </select>
+            <br />
+            <button type="button" className="btn" onClick={() => this.create()}>
+              Create Board
+            </button>
+            <button
+              type="button"
+              className="btn close"
+              onClick={() => this.closeForm()}
+            >
+              Close
+            </button>
           </form>
         </div>
-        <input type="text" placeholder="Search" />
+        <div class="search_all_boards">
+          <span class="search-icon"></span>
+          <input type="text" placeholder="Search a board"></input>
+        </div>
         <h1>Boards</h1>
-        Last modified
+        <span className="last">Last modified</span>
         <div className="student_new_board">
           <div className="new_board">
-            <div className="new_board_btn" onClick={() => this.new_board()}>+</div>
+            <div className="new_board_btn" onClick={() => this.new_board()}>
+              +
+            </div>
             New Board
           </div>
           {this.list_boards_new.map((object) => (
             <Student_Board_Item key={object.name} {...object} />
           ))}
         </div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        All Boards
+        <br />
+        <span className="all">All Boards</span>
         <div className="student_all_board">
           {this.list_boards.map((object) => (
             <Student_Board_Item key={object.name} {...object} />

@@ -1,5 +1,29 @@
 .student_board_item {
     width: 25%;
+    
   margin: 0;
   float: left;
+  text-align: center;
+}
+.student_board_item .board_item{
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 70%;
+  height: 100px;
+  background-color: #fff;
+}
+
+.student_board_item .board_img {
+  background-image: url("https://fonts.gstatic.com/s/i/materialicons/view_quilt/v13/20px.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-left: 29%;
+  width: 70px;
+  height: 70px;
+}
+
+.student_board_item .navbar-item {
+  text-decoration: none;
+  color: #000;
 }
