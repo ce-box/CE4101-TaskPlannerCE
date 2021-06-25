@@ -16,7 +16,7 @@ class Professor_Sign_Up extends React.Component {
   render() {
     return (
       <div className="Container_Profesor_Sign">
-      <div className="image" />
+        <div className="image" />
         <form className="form-container">
           <h1>Complete Profile</h1>
           <input type="text" placeholder="Name" name="name" />
