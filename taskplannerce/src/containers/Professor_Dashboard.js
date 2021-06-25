@@ -32,7 +32,7 @@ class Professor_Dashboard extends React.Component {
           <div className="professor_shared_board">
             Currently the students have shared
             <br />
-            <p>{this.dashboard_list.shared}</p>
+            <p>{this.dashboard_list[0].shared}</p>
             boards with you
           </div>
           <div className="professor_time_line">

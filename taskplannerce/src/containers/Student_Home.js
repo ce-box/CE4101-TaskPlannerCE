@@ -5,6 +5,7 @@ import '../assets/styles/Student_Home.css';
 import Header from "../components/Header";
 import SideBar from "../components/SideBar";
 import Student_Dashboard from './Student_Dashboard';
+import Student_Friends from "../containers/Student_Friends"
 
 // React
 import React from "react";
@@ -19,6 +20,7 @@ class Student_Home extends React.Component {
                     <SideBar />
                     <Switch>
                         <Route path="/Student/Friends">
+                            <Student_Friends/>
                         </Route>
                         <Route path="/Student/Board">
                         </Route>
