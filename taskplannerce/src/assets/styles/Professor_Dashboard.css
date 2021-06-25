@@ -19,3 +19,29 @@
   width: 100%;
   margin: 0;
 }
+
+.professor_shared_board {
+  justify-content: center;
+  text-align: center;
+  width: 40%;
+  padding: 5%;
+  border-radius: 10px;
+  background-color: #ebf3e3;
+  margin-right: 4%;
+}
+
+.professor_time_line {
+  justify-content: center;
+  text-align: center;
+  width: 60%;
+  background-color: #ebf3e3;
+  border-radius: 10px;
+
+}
+
+.share-number {
+  font-weight: bold;
+  color: green;
+  font-size: 120px;
+  margin: 0;
+}
