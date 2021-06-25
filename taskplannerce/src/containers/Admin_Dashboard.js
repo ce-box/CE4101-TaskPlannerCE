@@ -32,8 +32,7 @@ class Admin_Dashboard extends React.Component {
                   }} 
                 />
               </div>
-        </section>
-        <section>
+              <div>
           <div>
             <h2>Boards per student</h2>
           </div>
@@ -70,6 +69,7 @@ class Admin_Dashboard extends React.Component {
               }} 
             />
           </div>
+        </div>
         </section>
         <section>
           <h2>Percentage of academic boards</h2>
@@ -95,8 +95,7 @@ class Admin_Dashboard extends React.Component {
                   }} 
                 />
           </div>
-        </section>
-        <section>
+          <div>
           <div>
           <Bar
               data = {{
@@ -127,6 +126,7 @@ class Admin_Dashboard extends React.Component {
             />
           </div>
           <h2>CE professors using task planner CE</h2>
+        </div>
         </section>
       </div>
     );
