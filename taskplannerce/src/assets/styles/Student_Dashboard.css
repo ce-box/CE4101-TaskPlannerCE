@@ -1,11 +1,24 @@
-.dashboard_student {
-    margin: 2%;
-    width: 98%;
-    display: inline-block;
-    height: 93%;
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-h2 {
+.dashboard_student {
+    margin: 0;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.time-boars {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 1%;
+    margin-bottom: 3%;
+}
+
+.percentage-academic {
     font-weight: bold;
     font-size: 20px;
     margin: 1%;
@@ -19,16 +32,21 @@ h2 {
     font-size: 20px;
 }
 
+.boards-recent{
+    margin-bottom: 0;
+}
+
 .boards {
     margin-top: 0;
     margin: 2%;
     height: 30%;
+    
 }
 
 .student_graf {
     display: flex;
-    margin: 2%;
-    height: 70%;
+    margin: 3%;
+    
 }
 
 .student_time_line {
@@ -40,6 +58,7 @@ h2 {
     margin-left: 0;
     border-radius: 10px;
     padding: 1%;
+    position: relative;
 }
 
 .board-type {
@@ -50,9 +69,22 @@ h2 {
     background-color: #ebf3e3;
     border-radius: 10px;
     padding: 1%;
+    position: relative;
 }
 
 h1 {
     font-size: 40px;
+    margin-top: 0;
+}
+
+.student_dash_board_g{
+    background-color: #ebebeb;
+    border-radius: 10px;
+    height: 55%;
+}
+
+.student_dash_board_g_ul{
+    justify-content: center;
+    text-align: center;
     margin-top: 0;
 }

@@ -27,15 +27,17 @@ class Student_Dashboard extends React.Component {
         <section className="boards">
           <h1> Dashboard </h1>
           <h3 className="boards-recent">Recently shared boards</h3>
-          <div className="student_dash_board">
-            {this.list_boards_dash.map((object) => (
-              <Student_Board_Item key={object.name} {...object} />
-            ))}
+          <div className="student_dash_board_g">
+            <ul className="student_dash_board_g_ul">
+              {this.list_boards_dash.map((object) => (
+                <Student_Board_Item key={object.name} {...object} />
+              ))}
+            </ul>
           </div>
         </section>
         <section className="student_graf">
           <div className="student_time_line">
-            <h2>Timeline of shared boards</h2>
+            <h2 className="time-boars">Timeline of shared boards</h2>
             <div>
               <Bar
                 data = {{
@@ -53,8 +55,9 @@ class Student_Dashboard extends React.Component {
                         xAxisKey: 'month',
                         yAxisKey: 'boards'
                     },
-                    responsive: true,
                     maintainAspectRatio: false,
+                    responsive: true,
+                    
                     scales: {
                     x: {
                       beginAtZero: true,
@@ -65,7 +68,7 @@ class Student_Dashboard extends React.Component {
             </div>
           </div>
           <div className="board-type">
-            <h2>Percentage of academic boards</h2>
+            <h2 className="percentage-academic">Percentage of academic boards</h2>
             <div>
                 <Doughnut
                 data = {{
@@ -89,6 +92,7 @@ class Student_Dashboard extends React.Component {
                 options={{
                     maintainAspectRatio: false,
                     responsive: true,
+                    
                 }}
                 />
             </div>
