@@ -7,12 +7,14 @@ import SideBar from "../components/SideBar";
 import Student_Friends from "../containers/Student_Friends";
 import Student_All_Boards from "./Student_All_Boards";
 import Student_Dashboard from "./Student_Dashboard";
+import Student_Board from "./Student_Board";
 
 // React
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class Student_Home extends React.Component {
+  data = "";
   render() {
     return (
       <div className="container_home">
@@ -23,7 +25,9 @@ class Student_Home extends React.Component {
             <Route path="/Student/Friends">
               <Student_Friends />
             </Route>
-            <Route path="/Student/Board"></Route>
+            <Route path="/Student/Board">
+              <Student_Board/>
+            </Route>
             <Route path="/Student/Dashboard">
               <Student_Dashboard />
             </Route>
