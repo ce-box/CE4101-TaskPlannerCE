@@ -36,8 +36,8 @@ class Student_All_Boards extends React.Component {
       <div className="student_all_boards_container">
         <div className="board-new-popup">
           <form className="form-container">
-            <h1>New Board</h1>
-            <label for="name">Board Name </label>
+            <h1 className="title_new_board">New Board</h1>
+            <label for="name" >Board Name </label>
             <br />
             <input type="text" placeholder="Board Name" name="name" required />
             <br />
