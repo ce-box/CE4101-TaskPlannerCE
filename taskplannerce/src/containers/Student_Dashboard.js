@@ -26,7 +26,7 @@ class Student_Dashboard extends React.Component {
       <main className="dashboard_student">
         <section className="boards">
           <h1> Dashboard </h1>
-          Recently shared boards
+          <h3 className="boards-recent">Recently shared boards</h3>
           <div className="student_dash_board">
             {this.list_boards_dash.map((object) => (
               <Student_Board_Item key={object.name} {...object} />

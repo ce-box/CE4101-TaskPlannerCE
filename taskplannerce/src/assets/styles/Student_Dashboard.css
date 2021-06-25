@@ -1,7 +1,8 @@
-main {
-    display: inline-block;
+.dashboard_student {
     margin: 2%;
     width: 98%;
+    display: inline-block;
+    height: 93%;
 }
 
 h2 {
@@ -11,14 +12,23 @@ h2 {
     margin-bottom: 3%;
 }
 
+.boards-recent{
+    margin-bottom: 2%;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .boards {
     margin-top: 0;
     margin: 2%;
+    height: 30%;
 }
 
 .student_graf {
     display: flex;
     margin: 2%;
+    height: 70%;
 }
 
 .student_time_line {
