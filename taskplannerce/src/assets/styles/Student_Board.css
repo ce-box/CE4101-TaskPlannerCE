@@ -1,0 +1,22 @@
+.board_student_row .board_student_columns {
+  width: 1fr;
+  margin: 5px;
+  float: left;
+}
+
+.board_student_row {
+  height: 80%;
+  width: 100%;
+}
+
+.board_student .board_student_row .new_column {
+  background-color: darkgray;
+  width: 10%;
+  margin: 5px;
+  height: 100%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
