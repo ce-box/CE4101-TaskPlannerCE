@@ -25,14 +25,14 @@ function Friend({name, email, time}) {
                     <h2>{name}</h2>
                     <h3>{email}</h3>
                 </div>
-                <div>
-                    <h3>{time}</h3>
-                </div>
             </div>
             <div className="button_main">
-                <a onClick={accept_friend}>Accept</a>
-                <a onClick={delete_friend}>Delete</a>
+                <a className="accept" onClick={accept_friend}>Accept</a>
+                <a className="delete" onClick={delete_friend}>Delete</a>
             </div>
+        </section>
+        <section>
+          <h3>{time}</h3>
         </section>
     </div>
   );

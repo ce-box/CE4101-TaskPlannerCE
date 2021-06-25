@@ -5,6 +5,7 @@ h2{
 h3 {
     margin: 0px;
     margin-bottom: 10px;
+    color: #808080;
 }
 
 div.friend_main {
@@ -12,6 +13,8 @@ div.friend_main {
     background: #ffff;
     border-radius: 10px;
     display: flex;
+    border-width: 1px;
+    border-style: solid;
 }
 
 section.img_main{
@@ -24,5 +27,35 @@ section.info_main{
 
 div.info {
     display: flex;
+}
+
+.button_main {
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.button_main a {
+    border-radius: 5px;
+    padding: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+a.accept {
+    margin-right: 8%;
+}
+
+.accept {
+    color: white;
+    background: green;
+}
+
+.delete {
+    color: white;
+     background: red;
 }
 
