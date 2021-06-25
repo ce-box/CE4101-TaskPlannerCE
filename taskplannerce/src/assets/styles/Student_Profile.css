@@ -1,0 +1,14 @@
+.profile_student .profile_img {
+  width: 50%;
+  height: 50%;
+  background-image: url("https://avatars.githubusercontent.com/u/47313528?v=4");
+  margin: 0;
+  float: left;
+  background-size: 30% 50%;
+  background-repeat: no-repeat;
+}
+.profile_student .profile_info {
+  width: 50%;
+  margin: 0;
+  float: left;
+}

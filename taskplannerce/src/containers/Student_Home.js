@@ -8,6 +8,7 @@ import Student_Friends from "../containers/Student_Friends";
 import Student_All_Boards from "./Student_All_Boards";
 import Student_Dashboard from "./Student_Dashboard";
 import Student_Board from "./Student_Board";
+import Student_Profile from "./Student_Profile";
 
 // React
 import React from "react";
@@ -31,7 +32,9 @@ class Student_Home extends React.Component {
             <Route path="/Student/Dashboard">
               <Student_Dashboard />
             </Route>
-            <Route path="/Student/Profile"></Route>
+            <Route path="/Student/Profile">
+              <Student_Profile/>
+            </Route>
             <Route path="/Student/Home">
               <Student_All_Boards />
             </Route>
