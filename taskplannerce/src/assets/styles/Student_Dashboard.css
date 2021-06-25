@@ -81,10 +81,8 @@ h1 {
     background-color: #ebebeb;
     border-radius: 10px;
     height: 55%;
+    justify-content: center;
+    padding: 2%;
+    padding-bottom: 0;
 }
 
-.student_dash_board_g_ul{
-    justify-content: center;
-    text-align: center;
-    margin-top: 0;
-}

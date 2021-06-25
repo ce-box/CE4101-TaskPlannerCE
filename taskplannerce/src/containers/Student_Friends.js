@@ -55,7 +55,7 @@ class Student_Friends extends React.Component {
           </div>
         </section>
         <section className="student_notifications">
-          <div>
+          <div className="h2_request_title">
             <h2 className="notification_friend">Friend Request</h2>
             <ul className="student_n_list">
               {this.students_friends.map((object) => (
