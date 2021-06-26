@@ -1,4 +1,5 @@
 // Style
+import "../assets/styles/Admin_System_Item.css";
 
 // React
 import React from "react";
@@ -9,21 +10,29 @@ function Admin_System_Item({ name, list }) {
     console.log({ name });
   }
   return (
-    <li>
+    <li className="admim_system_item_main">
       <div className="admim_system_item">
-        <p>{name}</p>
-        {list.map((object) => (
+        <section className="botton-section-admin-1">
           <div>
-            <input type="checkbox" name="checkbox" value="{object}"/>
-            <span>{object}</span>
+            <h2 className="title-admin-system">{name}</h2>
           </div>
-        ))}
-        <br/>
-        <div className="sign">
-          <a className="button_delete" onClick={new_item}>
-            Add Item
-          </a>
-        </div>
+          <div className="item-admin-system">
+            {list.map((object) => (
+              <div className="item-item-admin-system">
+                <input type="checkbox" name="checkbox" value="{object}"/>
+                <span>{object}</span>
+              </div>
+            ))}
+            <br/>
+          </div>
+        </section>
+        <section className="botton-section-admin-2">
+          <div className="sign_item_system">
+            <a className="new-request-admin-item" onClick={new_item}>
+              Add Item
+            </a>
+          </div>
+        </section>
       </div>
     </li>
   );

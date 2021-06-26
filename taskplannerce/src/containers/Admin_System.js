@@ -11,7 +11,7 @@ class Admin_System extends React.Component {
   list_system = [
     {
       name: "Hobbies",
-      list: ["Movies", "Music", "Theater", "Sports"],
+      list: ["Movies", "Music", "Theater"],
     },
     {
       name: "Board type",
@@ -21,19 +21,27 @@ class Admin_System extends React.Component {
   new_system() {}
   render() {
     return (
-      <div className="Admin_System">
-        <h1>System</h1>
-        <button type="button" className="btn" onClick={() => this.new_system()}>
-          New Setting
-        </button>
-        <div className="admin_table_system">
-          <ul>
-            {this.list_system.map((object) => (
-              <Admin_System_Item key={object.name} {...object} />
-            ))}
-          </ul>
-        </div>
-      </div>
+      <main className="dashboard_student">
+        <section className="admin-main-system">
+          <div className="admin-main-system">
+            <h1>System</h1>
+          </div>
+          <div className="admin-system-new">
+            <a className="new-request" onClick={() => this.new_system()}>
+              New Setting
+            </a>
+          </div>
+        </section>
+        <section className="admin_table-container">
+          <div className="admin_table_system">
+            <ul className="admin_table_ul">
+              {this.list_system.map((object) => (
+                <Admin_System_Item key={object.name} {...object} />
+              ))}
+            </ul>
+          </div>
+        </section>
+      </main>
     );
   }
 }

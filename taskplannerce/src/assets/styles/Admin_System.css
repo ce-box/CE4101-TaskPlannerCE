@@ -7,3 +7,46 @@
   text-align: center;
   border-left: 1px solid #f2f2f2;
 }
+
+.admin-main-system {
+  width: 95%;
+  display: flex;
+}
+
+.admin-system-title {
+  width: 50%;
+  text-align: left;
+}
+
+.admin-system-new {
+  width: 50%;
+  text-align: right;
+  margin: 2%;
+}
+
+.new-request{
+  border-radius: 5px;
+  padding: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-left: 5%;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: green;
+  color: white;
+}
+
+.admin_table_system {
+  width: 98%;
+  margin: 0;
+}
+
+.admin_table_ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  width: 98%;
+}
+

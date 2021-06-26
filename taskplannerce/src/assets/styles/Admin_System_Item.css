@@ -1,0 +1,60 @@
+.admim_system_item {
+    background-color:  #ebf3e3;
+    border-radius: 10px;
+    padding: 10%;
+    height: 80%;
+}
+
+.admin_table-container {
+    display: flex;
+}
+
+.admim_system_item_main {
+    width: 20%;
+    margin-right: 3%;
+}
+
+.title-admin-system {
+    text-align: left;
+    font-size: 26px;
+    margin-bottom: 10%;
+}
+
+.item-admin-system {
+    font-size: 14px;
+}
+
+.item-item-admin-system {
+    margin: 5%;
+}
+
+.new-request-admin-item{
+    border-radius: 5px;
+    padding: 3%;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-left: 5%;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+
+.sign_item_system {
+    text-align: center; 
+    margin-top: 10%;
+
+}
+
+.botton-section-admin-2 {
+    height: 40%;
+    justify-content: end;
+    margin: 0%;
+}
+
+.botton-section-admin-1 {
+    margin: 0%;
+    justify-content: end;
+}
