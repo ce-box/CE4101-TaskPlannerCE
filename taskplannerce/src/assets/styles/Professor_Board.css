@@ -1,3 +1,37 @@
+.board_professor_row .board_professor_columns {
+  width: 15%;
+  margin: 5px;
+  float: left;
+  height: 95%;
+}
+
 .board_professor {
     margin: 2% 2%;
+  }
+
+  .board_professor .board_professor_row {
+    height: 80%;
+    width: 100%;
+  }
+
+
+
+  .board_professor .board_professor_task {
+    margin: 10% 0;
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .board_professor_columns .columns{
+    background-color: #D7E9D7;
+    border-radius: 10px;
+    padding: 10px;
+    height: 100%;
+  }
+
+  .board_professor_columns .columns .title_span{
+    font-weight: bold;
+    color: #015913;
   }
