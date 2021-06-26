@@ -10,6 +10,7 @@ import Admin_Home from "./Admin_Home";
 
 
 class App extends React.Component {
+  id_aso = "";
   render() {
     return (
       <BrowserRouter>

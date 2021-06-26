@@ -9,14 +9,16 @@ import Student_All_Boards from "./Student_All_Boards";
 import Student_Dashboard from "./Student_Dashboard";
 import Student_Board from "./Student_Board";
 import Student_Profile from "./Student_Profile";
-
+import App from "./App";
 // React
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class Student_Home extends React.Component {
+  id_user = App.id_aso;
   data = "";
   render() {
+    console.log(this.id_user);
     return (
       <div className="container_home">
         <Router>
