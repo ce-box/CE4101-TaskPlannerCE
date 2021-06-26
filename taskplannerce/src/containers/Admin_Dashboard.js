@@ -6,6 +6,7 @@ import React from "react";
 import { Bar, Doughnut, Pie } from "react-chartjs-2";
 
 class Admin_Dashboard extends React.Component {
+  
   render() {
     return (
       <main className="dashboard_student">
