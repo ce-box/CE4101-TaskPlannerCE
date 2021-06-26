@@ -1,0 +1,51 @@
+.professor_all_boards_container {
+    margin-left: 5%;
+  }
+
+  .professor_all_boards_container .search_all_boards {
+    margin-top: 2%;
+    border-radius: 25px;
+    border-width: 1px;
+    width: 60%;
+    border-radius: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .professor_all_boards_container .search_all_boards input {
+    width: 90%;
+    padding-left: 2%;
+    height: 30px;
+    border: none;
+    outline: none;
+  }
+
+  .professor_all_boards_container .search_all_boards:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+  }
+
+  .professor_all_boards_container .search_all_boards .search-icon {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+  }
+
+  .professor_all_boards_container .all {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .professor_all_boards_container .professor_all_board {
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    height: 100px;
+    width: 90%;
+  }
+  
