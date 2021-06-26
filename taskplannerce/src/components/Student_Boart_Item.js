@@ -19,7 +19,8 @@ function Student_Board_Item({ name }) {
       <NavLink className="navbar-item" to="/Student/Board">
         <div className="board_item" onClick={() => open_board(name)}>
           <div className="board_img"></div>
-          {name}
+          <div class="board-icon"/>
+          <span className="board-text">{name}</span>
         </div>
       </NavLink>
     </div>

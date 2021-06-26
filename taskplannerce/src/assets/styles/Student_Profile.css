@@ -1,14 +1,144 @@
-.profile_student .profile_img {
-  width: 50%;
-  height: 50%;
+.profile_student_page {
+  margin: 20px;
+}
+
+.profile_student_page .profile_img {
+  width: 30%;
+  height: 60%;
   background-image: url("https://avatars.githubusercontent.com/u/47313528?v=4");
   margin: 0;
   float: left;
-  background-size: 30% 50%;
+  background-size: 60% 60%;
   background-repeat: no-repeat;
 }
-.profile_student .profile_info {
-  width: 50%;
+.profile_student_page .profile_info {
+  width: 70%;
   margin: 0;
   float: left;
+}
+
+.profile_student_page .profile_info .name_profile {
+  font-weight: bold;
+}
+
+.profile_student_page .profile_info .margin-span {
+  margin: 5px 0;
+  display: inline-block;
+  font-size: 24px;
+}
+
+.profile_student_page .profile_info .name-icon {
+  background-image: url("https://fonts.gstatic.com/s/i/materialiconsoutlined/account_box/v11/24px.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 12px;
+  margin: 0;
+  margin-right: 5px;
+  float: left;
+  width: 24px;
+  height: 24px;
+}
+
+.profile_student_page .profile_info .carnet-icon {
+  background-image: url("https://fonts.gstatic.com/s/i/materialiconsoutlined/badge/v10/24px.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 12px;
+  margin: 0;
+  margin-right: 5px;
+  float: left;
+  width: 24px;
+  height: 24px;
+}
+
+.profile_student_page .profile_info .mail-icon {
+  background-image: url("https://fonts.gstatic.com/s/i/materialiconsoutlined/email/v16/24px.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 12px;
+  margin: 0;
+  margin-right: 5px;
+  float: left;
+  width: 24px;
+  height: 24px;
+}
+
+.profile_student_page .profile_info .carrier-icon {
+  background-image: url("https://fonts.gstatic.com/s/i/materialiconsoutlined/work/v11/24px.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 12px;
+  margin: 0;
+  margin-right: 5px;
+  float: left;
+  width: 24px;
+  height: 24px;
+}
+
+.profile_student_page .profile_info .from-icon {
+  background-image: url("https://fonts.gstatic.com/s/i/materialiconsoutlined/location_on/v14/24px.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 12px;
+  margin: 0;
+  margin-right: 5px;
+  float: left;
+  width: 24px;
+  height: 24px;
+}
+
+.profile_student_page .profile_info .live-icon {
+  background-image: url("https://fonts.gstatic.com/s/i/materialiconsoutlined/where_to_vote/v15/24px.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 12px;
+  margin: 0;
+  margin-right: 5px;
+  float: left;
+  width: 24px;
+  height: 24px;
+}
+
+.profile_student_page .profile_info .phone-icon {
+  background-image: url("https://fonts.gstatic.com/s/i/materialiconsoutlined/call/v15/24px.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 12px;
+  margin: 0;
+  margin-right: 5px;
+  float: left;
+  width: 24px;
+  height: 24px;
+}
+
+.profile_student_page .profile_info .edit-icon {
+  background-image: url("https://fonts.gstatic.com/s/i/materialiconsoutlined/edit/v11/24px.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 12px;
+  margin: 0;
+  margin-right: 5px;
+  float: left;
+  width: 24px;
+  height: 12px;
+}
+
+.profile_student_page .profile_info .btn_edit{
+  margin-top: 40px;
+  margin-right: 20px;
+  color: #fff;
+  font-size: 24px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #015913;
+  cursor: pointer;
+}
+.profile_student_page .profile_info .btn_delete{
+  margin-top: 40px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 24px;
+  background-color: rgb(218, 33, 33);
 }

@@ -40,7 +40,7 @@ function Header_Professor() {
       </div>
       <div className="notification_popup">Your Notifications</div>
       <div className="profile_popup">
-        {information[0].name}
+        <span className="name_popup">{information[0].name}</span>
         <br />
         {information[0].mail}
         <br />

@@ -72,15 +72,20 @@
 
 .header_Admin .profile_popup {
   visibility: hidden;
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 110px;
   background-color: #015913;
   color: #fff;
   border-radius: 6px;
   position: absolute;
   z-index: 1;
   top: 10%;
-  left: 84%;
+  left: 83%;
+  padding: 20px;
+}
+
+.header_Admin .profile_popup .name_popup {
+  font-weight: bold;
 }
 
 .header_Admin .show {
@@ -103,9 +108,11 @@
 .header_Admin .profile_popup .navbar-item {
   text-decoration: none;
   color: #fff;
+  font-weight: bold;
 }
 
 .header_Admin .profile_popup .sign_out_a {
   text-decoration: none;
   color: #fff;
+  font-weight: bold;
 }

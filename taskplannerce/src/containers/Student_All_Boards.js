@@ -36,19 +36,25 @@ class Student_All_Boards extends React.Component {
       <div className="student_all_boards_container">
         <div className="board-new-popup">
           <form className="form-container">
-            <h1 className="title_new_board">New Board</h1>
-            <label for="name" >Board Name </label>
+            <button
+              type="button"
+              className="btn_close"
+              onClick={() => this.closeForm()}
+            >
+              🠔
+            </button>
+              <h1 className="title_new_board">New Board</h1>
+
+            <label for="name">Board Name </label>
             <br />
             <input type="text" placeholder="Board Name" name="name" required />
             <br />
             <label for="description">Description </label>
             <br />
-            <input
-              type="text"
-              placeholder="Description"
-              name="description"
-              required
-            />
+            <textarea rows="4" cols="43" name="description" form="usrform" 
+              className="input-description">
+            </textarea>
+            
             <br />
             <br />
             <label for="name">Board Type </label>
@@ -65,13 +71,6 @@ class Student_All_Boards extends React.Component {
             <br />
             <button type="button" className="btn" onClick={() => this.create()}>
               Create Board
-            </button>
-            <button
-              type="button"
-              className="btn close"
-              onClick={() => this.closeForm()}
-            >
-              Close
             </button>
           </form>
         </div>

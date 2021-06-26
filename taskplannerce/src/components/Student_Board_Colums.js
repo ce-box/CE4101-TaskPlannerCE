@@ -27,36 +27,44 @@ function Student_Board_Columns({ name }) {
     <div className="board_student_columns">
       <div className="task-new-popup">
         <form className="form-container">
+          <button
+            type="button"
+            className="btn_close"
+            onClick={() => closeForm()}
+          >
+            🠔
+          </button>
           <h1>New Task</h1>
           <div className="left_new_task">
             <input type="text" placeholder="Task Title" />
             <br />
             <label for="description">Description </label>
             <br />
-            <input
-              type="text"
-              placeholder="Description"
+            <textarea
+              rows="4"
+              cols="23"
               name="description"
-              required
-            />
+              form="usrform"
+              className="input-description-task"
+            ></textarea>
           </div>
           <div className="right_new_task">
             <label for="description">Assignee </label>
             <br />
             <select className="canton_student">
-                <option disabled selected>
-                  No one
-                </option>
-              </select>
+              <option disabled selected>
+                No one
+              </option>
+            </select>
             <br />
             <hr className="separator" />
-            <label for="description">TasK Priority </label>
+            <label for="description">Task Priority </label>
             <br />
             <select className="canton_student">
-                <option disabled selected>
-                  No one
-                </option>
-              </select>
+              <option disabled selected>
+                No one
+              </option>
+            </select>
             <br />
             <hr className="separator" />
             <label for="description">Start </label>
@@ -73,18 +81,19 @@ function Student_Board_Columns({ name }) {
           <button type="button" className="btn" onClick={create}>
             Create Board
           </button>
-          <button type="button" className="btn close" onClick={closeForm}>
-            Close
-          </button>
         </form>
       </div>
-      {name}
+      <div className="columns">
       <a className="button_new" onClick={new_task}>
-        +
-      </a>
-      {list_task.map((object) => (
-        <Student_Board_Task key={object.name} {...object} />
-      ))}
+          +
+        </a>
+        <br/>
+        <span className="title_span">{name}</span>
+        
+        {list_task.map((object) => (
+          <Student_Board_Task key={object.name} {...object} />
+        ))}
+      </div>
     </div>
   );
 }

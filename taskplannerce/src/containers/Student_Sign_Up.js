@@ -105,6 +105,7 @@ class Student_Sign_Up extends React.Component {
             <button
               type="Text"
               className={object}
+              name="big_button"
               onClick={() => this.change_color(object)}
             >
               {object}
@@ -121,11 +122,12 @@ class Student_Sign_Up extends React.Component {
         </div>
         <div className="student_hobby_signup">
           <div className="image" />
-          <h1>What are ypur hobbies?</h1>
+          <h1>What are your hobbies?</h1>
           {this.list_hobby.map((object) => (
             <button
               type="Text"
               className={object}
+              name="big_button_aux"
               onClick={() => this.change_color_aux(object)}
             >
               {object}

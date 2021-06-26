@@ -3,7 +3,6 @@
     
   margin: 0;
   float: left;
-  text-align: center;
 }
 .student_board_item .board_item{
   border: 1px solid #000;
@@ -25,4 +24,21 @@
 .student_board_item .navbar-item {
   text-decoration: none;
   color: #000;
+}
+
+.student_board_item .board_item .board-icon {
+  background-image: url("https://fonts.gstatic.com/s/i/materialiconsoutlined/auto_stories/v12/24px.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 12px;
+  margin: 0;
+  margin-left: 10px;
+  float: left;
+  width: 24px;
+  height: 6px;
+}
+
+.student_board_item .board_item .board-text {
+  font-size: 14px;
+  margin-left: 10px;
 }

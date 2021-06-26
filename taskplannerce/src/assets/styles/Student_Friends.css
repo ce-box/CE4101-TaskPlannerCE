@@ -107,3 +107,6 @@ main .main-input-container .search-icon {
     padding: 0;
 }
 
+.student_friends .separator {
+    width: 60%;
+}

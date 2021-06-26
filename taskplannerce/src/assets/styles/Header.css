@@ -1,20 +1,17 @@
 .header {
-    background-color: #00C428;
-    grid-area: header;
-    display: grid;
-    grid-template-columns: 1fr 5% 5% 5%;
-    grid-template-areas:
-      "title help notificacion profile";
+  background-color: #00c428;
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 5% 5% 5%;
+  grid-template-areas: "title help notificacion profile";
 }
 
 .header .image {
-    background-image: url("../images/title.png");
-    background-repeat: no-repeat;
-    height: 60px;
-    grid-area: title;
-  }
-
-  
+  background-image: url("../images/title.png");
+  background-repeat: no-repeat;
+  height: 60px;
+  grid-area: title;
+}
 
 .header .help_student {
   cursor: pointer;
@@ -75,15 +72,20 @@
 
 .header .profile_popup {
   visibility: hidden;
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 110px;
   background-color: #015913;
   color: #fff;
   border-radius: 6px;
   position: absolute;
   z-index: 1;
   top: 10%;
-  left: 84%;
+  left: 83%;
+  padding: 20px;
+}
+
+.header .profile_popup .name_popup {
+  font-weight: bold;
 }
 
 .header .show {
@@ -106,9 +108,11 @@
 .header .profile_popup .navbar-item {
   text-decoration: none;
   color: #fff;
+  font-weight: bold;
 }
 
 .header .profile_popup .sign_out_a {
   text-decoration: none;
   color: #fff;
+  font-weight: bold;
 }

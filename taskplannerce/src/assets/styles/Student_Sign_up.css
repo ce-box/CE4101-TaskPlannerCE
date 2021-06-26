@@ -8,9 +8,11 @@
   background-color: #000;
   min-height: 100vh;
   display: none;
+  text-align: center;
 }
 .sign_up_container .student_hobby_signup {
   background-color: black;
+  text-align: center;
   min-height: 100vh;
   display: none;
 }
@@ -22,13 +24,17 @@
 }
 
 .sign_up_container .student_info_signup .form {
+  margin-top: 5%;
   margin-left: 35%;
 }
 .sign_up_container .student_info_signup .form-container {
   max-width: 380px;
 }
 
-.sign_up_container .student_info_signup input[type="text"],
+.sign_up_container .student_info_signup input[type="text"] {
+  width: 98%;
+  height: 30px;
+}
 .sign_up_container .student_info_signup select {
   width: 100%;
   height: 30px;
@@ -53,44 +59,70 @@
 }
 
 .sign_up_container .student_use_signup .image {
-    background-image: url("../images/title.png");
-    background-repeat: no-repeat;
-    height: 50px;
-  }
-  .sign_up_container .student_use_signup h1 {
-    color: #fff;
-  }
+  background-image: url("../images/title.png");
+  background-repeat: no-repeat;
+  height: 50px;
+}
+.sign_up_container .student_use_signup h1 {
+  margin: 5% 0;
+  color: #fff;
+}
 
-  .sign_up_container .elec {
-    background-color: burlywood;
-  }
-  .sign_up_container .student_use_signup .btn {
-    background-color: #00C428;
-    color: #fff;
-    border: none;
-    border-radius: 2px;
-    margin-top: 8%;
-    font-size: 16px;
-    height: 30px;
-    cursor: pointer;
-  }
+.sign_up_container .student_use_signup button[name="big_button"] {
+  height: 75px;
+  width: 200px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
 
-  .sign_up_container .student_hobby_signup .image {
-    background-image: url("../images/title.png");
-    background-repeat: no-repeat;
-    height: 50px;
-  }
-  .sign_up_container .student_hobby_signup h1 {
-    color: #fff;
-  }
+.sign_up_container .elec {
+  background-color: rgb(199, 219, 85);
+}
+.sign_up_container .student_use_signup .btn {
+  background-color: #00c428;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  margin-top: 8%;
+  font-size: 16px;
+  height: 30px;
+  margin-left: 48%;
+  width: 100px;
+  cursor: pointer;
+}
 
-  .sign_up_container .student_hobby_signup .btn {
-    background-color: #00C428;
-    color: #fff;
-    border: none;
-    border-radius: 2px;
-    margin-top: 8%;
-    font-size: 16px;
-    height: 30px;
-    cursor: pointer;
-  }
+.sign_up_container .student_hobby_signup .image {
+  background-image: url("../images/title.png");
+  background-repeat: no-repeat;
+  height: 50px;
+}
+.sign_up_container .student_hobby_signup h1 {
+  color: #fff;
+  margin: 5% 0;
+}
+
+.sign_up_container .student_hobby_signup button[name="big_button_aux"] {
+  height: 50px;
+  width: 200px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.sign_up_container .student_hobby_signup .btn {
+  background-color: #00c428;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  margin-top: 8%;
+  font-size: 16px;
+  height: 30px;
+  margin-left: 48%;
+  width: 100px;
+  cursor: pointer;
+}

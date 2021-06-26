@@ -15,28 +15,53 @@ class Student_Profile extends React.Component {
       phone: "8459-9262",
     },
   ];
+  edit_profile(){}
+  delete_profile(){}
 
   render() {
     return (
-      <div className="profile_student">
+      <div className="profile_student_page">
         <h1>My Profile</h1>
         <div className="profile_img"></div>
         <div className="profile_info">
-          {this.datos_sesion[0].name}
+          <div class="name-icon"/>   
+          <span className="name_profile margin-span">
+            {this.datos_sesion[0].name}
+          </span>
           <br />
-          {this.datos_sesion[0].carnet}
+          <div class="carnet-icon"/>
+          <span className="margin-span">{this.datos_sesion[0].carnet}</span>
           <br />
-          {this.datos_sesion[0].mail}
+          <div class="mail-icon"/>
+          <span className="margin-span">{this.datos_sesion[0].mail}</span>
           <br />
           <br />
-          {this.datos_sesion[0].carrier}
+          <div class="carrier-icon"/>
+          <span className="margin-span">{this.datos_sesion[0].carrier}</span>
           <br />
-          {this.datos_sesion[0].from}
+          <div class="from-icon"/>
+          <span className="margin-span">{this.datos_sesion[0].from}</span>
           <br />
-          {this.datos_sesion[0].live}
+          <div class="live-icon"/>
+          <span className="margin-span">{this.datos_sesion[0].live}</span>
           <br />
-          {this.datos_sesion[0].phone}
+          <div class="phone-icon"/>
+          <span className="margin-span">{this.datos_sesion[0].phone}</span>
           <br />
+          <button
+            type="button"
+            className="btn_edit"
+            onClick={() => this.edit_profile()}
+          >
+            <div class="edit-icon"/> Edit Profile
+          </button>
+          <button
+            type="button"
+            className="btn_delete"
+            onClick={() => this.delete_profile()}
+          >
+            Delete Account
+          </button>
         </div>
       </div>
     );
