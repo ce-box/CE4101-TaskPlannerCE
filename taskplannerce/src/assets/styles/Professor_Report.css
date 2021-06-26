@@ -1,0 +1,35 @@
+.select {
+    margin: 0;
+    width: 15%;
+    height: 30px;
+    box-shadow: 0 1px 6px 0 #20212447;
+}
+
+.chosee-report {
+    margin-top: 0;
+    margin: 2%;
+    height: 20%;
+}
+
+.repor-view {
+    margin: 2%;   
+}
+
+.report-div{
+    text-align: end;
+    margin: 1%;
+}
+
+.download{
+    border-radius: 5px;
+    padding: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-left: 5%;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #fc7304;
+    color: white;
+}

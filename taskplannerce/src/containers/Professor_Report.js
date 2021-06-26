@@ -1,4 +1,5 @@
 // Styles
+import "../assets/styles/Professor_Report.css";
 
 // React
 import React from "react";
@@ -12,28 +13,27 @@ class Professor_Report extends React.Component {
 
   render() {
     return (
-      <div className="container_Report">
-        <h1>Reports</h1>
-        Choose one Board
-        <br />
-        <select className="boards">
-          {this.list_board.map((object) => (
-            <option value="{object}">{object}</option>
-          ))}
-        </select>
-        <br />
-        <br />
-        <br />
-        Preview Reports
-        <div className="preview_report"></div>
-        <button
-            type="button"
-            className="btn"
-            onClick={() => this.download()}
-          >
-            Download Preview
-          </button>
-      </div>
+      <main className="dashboard_student">
+        <section className="chosee-report">
+          <h1>Reports</h1>
+          <h2>Choose one Board</h2>
+          <br />
+          <select className="select">
+            {this.list_board.map((object) => (
+              <option value="{object}">{object}</option>
+            ))}
+          </select>
+          <br />
+          <br />
+        </section>
+        <section className="repor-view">
+          <h2>Preview Reports</h2>
+          <div className="preview_report"></div>
+          <div className="report-div">
+            <a className="download" onClick={() => this.download()}>Download Report</a>
+          </div>
+        </section>
+      </main>
     );
   }
 }
